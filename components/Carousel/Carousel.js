@@ -54,6 +54,11 @@ img4.src="./assets/carousel/turntable.jpeg";
 const imgArr = [img1,img2,img3,img4];
 let currentImg = 1;
 
+mainImg.addEventListener("dblclick", ()=>{
+  mainImg.style.display = "none";
+  currentImg = 1;
+})
+
 rightButton.addEventListener("click",()=>{
 
   switch(currentImg){
